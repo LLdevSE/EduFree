@@ -14,11 +14,11 @@ a{
 }
 
 a:hover{
-    color: #4361ee;
+    color: #fff;
 }
 
 body{
-    background-color: #f8f8f8;
+    background-color: #cce2f0;
 }
 
 nav{
@@ -27,7 +27,7 @@ nav{
     justify-content: space-between;
     padding: 0 80px;
     height: 80px;
-    background-color: #fff;
+    background-color: #cce2f0;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px ;
 }
 
@@ -73,14 +73,14 @@ header{
     gap: 26px;
     background-color: #fff;
     opacity: 0.8;
-    background-image:  radial-gradient(#2d6a4f 0.75px, transparent 0.75px), radial-gradient(#2d6a4f 0.75px, #ffffff 0.75px);
+    background-image:  radial-gradient(#2d6a4f 0.75px, transparent 0.75px), radial-gradient(#2d6a4f 0.75px, #cce2f0 0.75px);
     background-size: 30px 30px;
     background-position: 0 0,15px 15px;
 }
 
 header .info h1{
     font-weight: 900;
-    background: #fff;
+    background: #cce2f0;
 }
 
 header .info p{
@@ -88,7 +88,7 @@ header .info p{
     font-size: 18px;
     margin-top: 14px;
     font-weight: bold;
-    background: #fff;
+    background: #cce2f0;
 }
 
 header .buttons{
@@ -136,3 +136,96 @@ header .search button{
     cursor: pointer;
 }
 
+.content{
+    background-color: #cce2f0;
+    padding: 100px 80px 0px;
+}
+
+.content .separator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.content .separator a{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #2d6a4f;
+    font-size: 14px;
+}
+
+.content .separator a i{
+    font-size: 18px;
+}
+
+.content .courses{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-bottom: 100px;
+}
+
+.content .courses .item{
+    width: 30%;
+}
+
+.content .courses .item .top,
+.content .courses .item .bottom{
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    padding: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    border-bottom: 1px dashed #888;
+}
+
+
+.content .courses .item .top img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.content .courses .item .top .info a{
+    display: block;
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    line-height: 1.4rem;
+}
+
+.content .courses .item .top .info p{
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.content .courses .item .bottom{
+    border-bottom: none;
+    justify-content: space-between;    
+    border-top: 1px dashed #888;
+}
+
+.content .courses .item .bottom .price p{
+    color: #888;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.content .courses .item .bottom h5.tag{
+    font-weight: 500;
+    background-color: #fff2b2;
+    color: #db7c26;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.content .courses .item .bottom h5.tag span{
+    font-weight: bold;
+}
