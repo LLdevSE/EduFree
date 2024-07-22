@@ -197,6 +197,11 @@ header .search button{
     font-weight: 900;
     margin-bottom: 8px;
     line-height: 1.4rem;
+    
+}
+
+.content .courses .item .top .info a:hover{
+    color: #cce2f0;
 }
 
 .content .courses .item .top .info p{
