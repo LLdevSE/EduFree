@@ -178,7 +178,7 @@ header .search button{
     gap: 10px;
     background-color: #fff;
     padding: 14px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 18px;
     border-bottom: 1px dashed #888;
 }
@@ -222,7 +222,8 @@ header .search button{
     text-decoration: line-through;
 }
 
-.content .courses .item .bottom h5.tag{
+.content .courses .item .bottom h5.tag,
+.content .courses .item .bottom .discount > h5{
     font-weight: 500;
     background-color: #fff2b2;
     color: #db7c26;
@@ -231,6 +232,33 @@ header .search button{
     font-size: 13px;
 }
 
-.content .courses .item .bottom h5.tag span{
+.content .courses .item .bottom h5.tag span,
+.content .courses .item .bottom .discount > h5 span{
     font-weight: bold;
+    
+}
+
+.content .courses .item .bottom .discount{
+    display: flex;
+    gap: 10px;
+}
+
+.content .courses .item .bottom .discount > h5{
+    background-color: #b7e4c7;
+    color: #2d6a4f;
+}
+
+.content .courses .item .bottom .discount .time{
+    text-align: center;
+}
+
+.content .courses .item .bottom .discount .time p{
+    color: #888;
+    font-size: 14px;    
+}
+
+.content .courses .item .bottom .discount .time h5{
+    font-size: 13px;
+    font-weight: 800;
+    font-style: italic;
 }
